@@ -3,6 +3,7 @@ import ProductCategory from './ProductCategory';
 import ProductName from './ProductName';
 import ProductDescription from './ProductDescription';
 import ProductPrice from './ProductPrice';
+import AddToCartButton from '../AddToCartButton/AddToCartButton';
 
 const ProductDetails = () => {
   return (
@@ -11,6 +12,7 @@ const ProductDetails = () => {
       <ProductName />
       <ProductDescription />
       <ProductPrice />
+      <AddToCartButton />
     </div>
   );
 };
