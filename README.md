@@ -29,7 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./public/desktop-preview.png" width="700">
+<img src="./public/desktop.png" width="700">
+<img src="./public/mobile.png">
 
 ## My process
 
