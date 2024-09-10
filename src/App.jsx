@@ -1,11 +1,13 @@
 
-import './App.css'
+import ProductCard from './components/ProductCard/ProductCard';
+import './styles/styles.css'
 
-function App() {
-
+const App = () => {
   return (
-    <h1>Hola mundo</h1>
-  )
-}
+    <div className="app">
+      <ProductCard />
+    </div>
+  );
+};
 
-export default App
+export default App;

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  margin: 20px;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.product-card__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-card__details {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__category {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 16px;
+}
+
+.product-card__name {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--very-dark-blue);
+  margin-bottom: 16px;
+}
+
+.product-card__description {
+  color: var(--dark-grayish-blue);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.product-card__price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.product-card__price--current {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  color: var(--dark-cyan);
+  margin-right: 16px;
+}
+
+.product-card__price--old {
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+.product-card__cta {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card__cta:hover {
+  background-color: hsl(158, 36%, 25%);
+}
+
+.product-card__cta-icon {
+  margin-right: 8px;
+}
+
+@media only screen and (min-width: 628px) {
+  .product-card {
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+  }
+}
