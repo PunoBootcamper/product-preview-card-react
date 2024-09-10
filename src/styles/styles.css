@@ -112,18 +112,15 @@ body {
 @media only screen and (min-width: 628px) {
   .product-card {
     grid-template-columns: 1fr 1fr;
-    max-width: 550px;
-    
+    max-width: 600px;
   }
   .product-card__image img {
     display: none;
-    
   }
-  .product-card__image{
-
+  .product-card__image {
     background-image: url(../assets/image-product-desktop.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-}
-
+    background-position: center;
+  }
 }
